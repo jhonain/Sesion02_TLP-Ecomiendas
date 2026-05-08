@@ -39,20 +39,7 @@ class Cliente(models.Model):
         return f'{self.nro_doc} - {self.apellidos}, {self.nombres}'
 
     class Meta:
-        db_table        = 'clientes'
-        verbose_name    = 'Cliente'
+        db_table            = 'clientes'
+        verbose_name        = 'Cliente'
         verbose_name_plural = 'Clientes'
-        ordering        = ['apellidos', 'nombres']
-
-    @property 
-    def nombre_completo(self): 
-        """Nombre y apellidos en formato legible""" 
-        return f'{self.apellidos}, {self.nombres}' 
-    @property 
-    def esta_activo(self): 
-        """Devuelve True si el estado es ACTIVO""" 
-        return self.estado == EstadoGeneral.ACTIVO 
-    @property 
-    def total_encomiendas_enviadas(self): 
-        """Número de encomiendas donde este cliente es remitente""" 
-        return self.envios_como_remitente.count() 
+        ordering            = ['apellidos', 'nombres']

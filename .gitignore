@@ -6,3 +6,8 @@ __pycache__/
 *.pyc
 db.sqlite3
 .DS_Store
+staticfiles/
+media/
+
+# Archivo basura generado por error de tipeo (git tatus en lugar de git status)
+tatus
