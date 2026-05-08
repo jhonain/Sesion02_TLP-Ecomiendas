@@ -1,0 +1,40 @@
+[33mcommit f17b3f97c437d465e32df557fb0e060910fc8b1c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Jhonain Vasquez Carrero <jhonainvazquescarrero@gmail.com>
+Date:   Sat Apr 18 14:57:55 2026 -0500
+
+    Initial commit - Sistema de Encomiendas
+
+ .env.example                      |  10 [32m+++[m
+ .gitignore                        |   8 [32m+++[m
+ Dockerfile                        |  18 [32m++++++[m
+ clientes/__init__.py              |   0
+ clientes/admin.py                 |   3 [32m+[m
+ clientes/apps.py                  |   5 [32m++[m
+ clientes/migrations/__init__.py   |   0
+ clientes/models.py                |   3 [32m+[m
+ clientes/tests.py                 |   3 [32m+[m
+ clientes/views.py                 |   3 [32m+[m
+ config/__init__.py                |   0
+ config/asgi.py                    |  16 [32m+++++[m
+ config/settings.py                | 129 [32m++++++++++++++++++++++++++++++++++++++[m
+ config/urls.py                    |  22 [32m+++++++[m
+ config/wsgi.py                    |  16 [32m+++++[m
+ docker-compose.yml                |  26 [32m++++++++[m
+ envios/__init__.py                |   0
+ envios/admin.py                   |  10 [32m+++[m
+ envios/apps.py                    |   5 [32m++[m
+ envios/migrations/0001_initial.py |  31 [32m+++++++++[m
+ envios/migrations/__init__.py     |   0
+ envios/models.py                  |  23 [32m+++++++[m
+ envios/tests.py                   |   3 [32m+[m
+ envios/views.py                   |   3 [32m+[m
+ manage.py                         |  22 [32m+++++++[m
+ requirements.txt                  | Bin [31m0[m -> [32m332[m bytes
+ rutas/__init__.py                 |   0
+ rutas/admin.py                    |   3 [32m+[m
+ rutas/apps.py                     |   5 [32m++[m
+ rutas/migrations/__init__.py      |   0
+ rutas/models.py                   |   3 [32m+[m
+ rutas/tests.py                    |   3 [32m+[m
+ rutas/views.py                    |   3 [32m+[m
+ 33 files changed, 376 insertions(+)
